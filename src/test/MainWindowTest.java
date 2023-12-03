@@ -15,11 +15,11 @@ public class MainWindowTest {
         currencies.add(currency1);
         currencies.add(currency2);
 
-        currency1.getExchangeValues().put("EUR", 0.85);
+        currency1.getExchangeValues().put("EUR", 0.93);
 
         Double result = MainWindow.convert("US Dollar", "Euro", currencies, 100.0);
 
-        assertEquals(85.0, result, 0.01);
+        assertEquals(93.0, result, 0.01);
     }
     @Test
     void testConvertNoCurrency1() {
