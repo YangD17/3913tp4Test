@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class MainWindowTest {
 
     @Test
-    void convert() {
+    void testConvert() {
         ArrayList<Currency> currencies = new ArrayList<>();
         Currency currency1 = new Currency("US Dollar", "USD");
         Currency currency2 = new Currency("Euro", "EUR");
